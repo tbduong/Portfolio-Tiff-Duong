@@ -1,0 +1,21 @@
+/*Buttons*/
+.btn {
+  
+}
+
+.btn-red {
+  background: #ce5b42;
+  color: #fff;
+}
+
+
+/*Jumbotron*/
+.jumbotron {
+  background-image: url(../images/workspace-splash.jpg);
+  background-size: cover;
+  padding: 2em;
+}
+.jumbotron p {
+  color: #fff;
+  font-weight: 300;
+}
