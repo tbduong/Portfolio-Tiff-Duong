@@ -5,7 +5,7 @@ $( document ).ready(function() {
         var scroll = $(window).scrollTop();
 
         if (scroll > 300) {
-	         $(".nav1").css("background" , "#000");
+	         $(".nav1").css("background" , "#333");
            $(".nav1").css("linear-gradient" , "none");
            $(".nav1").css("height" , "50px");
            $(".navbar-brand").css("font-size", "20px")
@@ -26,7 +26,7 @@ $( document ).ready(function() {
 
           // Establish default settings
           var settings = $.extend({
-              speed        : .5
+              speed        : 0.5
           }, options);
 
           // Iterate over each object in collection
@@ -57,7 +57,7 @@ $( document ).ready(function() {
       };
 
       $('.parallax').parallax({
-        speed : 0.5
+        speed : 0.4
       });
 
   //right menu toggle

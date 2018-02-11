@@ -1,6 +1,7 @@
 body {
   background: #fafafa;
   font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
 }
 
 a {
@@ -12,7 +13,7 @@ a {
 
 a:hover{
   color: #ce5b42;
-    text-shadow: none;
+  text-shadow: none;
 }
 
 .clearfix {
@@ -110,6 +111,7 @@ nav .container {
   right: -200px;
   top: 0;
 }
+
 #right-menu ul {
   margin:0px;
   padding:10px 0px;
@@ -118,6 +120,43 @@ nav .container {
   position: absolute;
   top: 50px;
   text-align: center;
+}
+
+#right-menu li {
+  letter-spacing: 3px;
+  padding: 20px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+#right-menu a {
+  text-decoration: none;
+}
+
+.sidenav-content {
+  z-index: 1;
+  position: absolute;
+  top: 55%;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.sidenav-content a{
+  color: #cacaca;
+}
+.sidenav-content a:hover{
+  color: #ce5b42;
+}
+
+.sidenav-content .col-sm-6 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.sidenav-social {
+  padding-bottom: 20px;
 }
 
 /*Footer*/
@@ -321,17 +360,26 @@ footer p {
 }
 
 @media screen and (max-width: 414px) {
-  .container {
-    text-align: center;
+  /*font style*/
+  section h1, h2 {
+    margin-bottom: 0;
+  }
+
+  #about {
+    top: 600px;
   }
   .banner-text {
-    margin-top: 0;
+    margin-top: 60px;
     padding: 0;
+    text-align: center;
+  }
+  .container {
+    text-align: center;
   }
   .jumbotron {
     height: 500px;
   }
-  #about {
-    top: 600px;
+  .sidenav-content {
+    width: 100%;
   }
 }
