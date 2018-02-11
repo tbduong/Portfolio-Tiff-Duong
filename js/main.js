@@ -8,9 +8,11 @@ $( document ).ready(function() {
 	         $(".nav1").css("background" , "#000");
            $(".nav1").css("linear-gradient" , "none");
            $(".nav1").css("height" , "50px");
+           $(".navbar-brand").css("font-size", "20px")
 	       } else {
            $(".nav1").css("background" , "linear-gradient(to top,transparent 0,rgba(0,0,0,.8) 55px,rgba(0,0,0,.8) 96px)");
            $(".nav1").css("height" , "70px");
+           $(".navbar-brand").css("font-size", "30px")
          }
 
          //banner content fades out on scroll

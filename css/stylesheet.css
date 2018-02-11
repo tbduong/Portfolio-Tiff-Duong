@@ -55,11 +55,11 @@ section h1, h2 {
 }
 
 .btn-white {
-  border: 2.5px solid #333;
-  color: #333;
+  border: 2.5px solid #fff;
+  color: #fff;
 }
 .btn-white:hover {
-  background:#333;
+  background:#fff;
   color: #ce5b42;
 }
 
@@ -69,12 +69,33 @@ section h1, h2 {
 }
 
 /*Navigation*/
+nav .container {
+  padding-top: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+}
 .nav1 {
   background: linear-gradient(to top,transparent 0,rgba(0,0,0,.8) 55px,rgba(0,0,0,.8) 96px);
   height: 70px;
   position: fixed;
   width: 100%;
   z-index: 1;
+}
+
+.navbar-brand {
+  font-family: 'Pacifico', roboto;
+  padding: 5px 0 0;
+  font-size: 30px;
+}
+.navbar-brand:hover {
+  font-size: 30px !important;
+}
+
+.menu {
+  float: right;
+  font-size: 20px;
 }
 
 /*Footer*/
@@ -200,6 +221,7 @@ footer p {
 .about-icon img{
   border-radius: 50%;
   transition: .9s ease-in-out;
+  padding-bottom: 20px;
 }
 .about-icon img:hover{
   -webkit-transform: rotate(360deg);
@@ -265,8 +287,8 @@ footer p {
 #contact {
   background-position: center;
   background-size: cover;
+  color: #fff;
 }
-
 
 
 /*Media Queries*/
