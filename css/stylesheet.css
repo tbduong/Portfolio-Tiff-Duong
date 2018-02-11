@@ -1,5 +1,18 @@
 body {
   background: #fafafa;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: .3s;
+  text-shadow: 1px 1px 15px #000;
+}
+
+a:hover{
+  color: #ce5b42;
+    text-shadow: none;
 }
 
 .clearfix {
@@ -8,21 +21,28 @@ body {
 
 /*Font Style*/
 body p {
+  font-size: 16px;
   line-height: 25px;
 }
 
-section h2 {
+section h1, h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
 /*Buttons*/
 .btn {
+  box-shadow: 7px 8px 20px #000;
+  font-size: 16px;
   padding: 10px 30px;
   border-radius: 25px;
+  margin-bottom: 20px;
   transition: ease .4s;
 }
 .btn:hover {
   padding: 10px 45px;
+  box-shadow: 1px 3px 9px #000;
 }
 
 .btn-red {
@@ -34,13 +54,55 @@ section h2 {
   color: #fff;
 }
 
+.btn-white {
+  border: 2.5px solid #333;
+  color: #333;
+}
+.btn-white:hover {
+  background:#333;
+  color: #ce5b42;
+}
+
+/*Background Colors*/
+.red {
+  background: #ce5b42;
+}
+
+/*Navigation*/
+.nav1 {
+  background: linear-gradient(to top,transparent 0,rgba(0,0,0,.8) 64px,rgba(0,0,0,.8) 96px);
+  height: 70px;
+  position: fixed;
+  width: 100%;
+}
+
+.nav2 {
+  background: #000;
+  height: auto;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+/*Footer*/
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+footer p {
+  margin-bottom: 0;
+}
+.copyright {
+  float: left;
+}
 
 /*Jumbotron*/
 .jumbotron {
   color: #fff !important;
   background-image: url(../images/workspace-splash.jpg);
   background-size: cover;
-  height: 600px;
+  height: 700px;
   margin-bottom: 0;
   padding: 2em;
   text-shadow: 1px 1px 15px #000;
@@ -49,11 +111,11 @@ section h2 {
 }
 .jumbotron p {
   color: #fff;
-  font-weight: 300;
+  font-weight: 400 !important;
 }
 
 .banner-text {
-  margin-top: 150px;
+  margin-top: 200px;
   padding: 0 50px;
 }
 
@@ -65,13 +127,154 @@ section h2 {
   padding: 10px 0;
 }
 
-.parralax {
-  height: 300px;
+.parallax {
+  height: 800px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+/*Images*/
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto 40px;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+/*Icons*/
+.about-icon img{
+  border-radius: 50%;
+  transition: .9s ease-in-out;
+}
+.about-icon img:hover{
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+.social {
+  float: right;
+}
+
+.social a {
+  color: #fff;
+  transition: ease .3s;
+  text-decoration: none;
+}
+
+.social a:hover {
+  color: #ce5b42;
+}
+
+.social .fa {
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+/*Fade Animation*/
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.fadeIn-top{
+  top: 20%;
+}
+
+.fadeIn-left{
+  left: 20%;
+}
+
+.fadeIn-right{
+  left: 80%;
+}
+
+.max-800 {
+  max-width: 800px;
+}
+
+.max-900 {
+  max-width: 900px;
+}
+
+.center {
+  text-align: center;
+}
+
+#about {
+  background: transparent;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  top: 850px;
+  text-shadow: 1px 1px 15px #000;
+}
+
+#contact {
+  background-position: center;
+  background-size: cover;
+}
+
+
 
 /*Media Queries*/
 @media screen and (max-width: 768px) {
@@ -90,5 +293,8 @@ section h2 {
   }
   .jumbotron {
     height: 500px;
+  }
+  #about {
+    top: 600px;
   }
 }

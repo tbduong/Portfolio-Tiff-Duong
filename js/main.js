@@ -1,7 +1,10 @@
 $( document ).ready(function() {
 
       $(window).scroll(function(){
-      $(".banner-text , .banner-span").css("opacity", 1 - $(window).scrollTop() / 300);
+        $(".nav2").css("opacity", 0 + $(window).scrollTop() / 200);
+        $(".nav1").css("opacity", 1 - $(window).scrollTop() / 200);
+        $(".banner-text , .banner-span").css("opacity", 1 - $(window).scrollTop() / 400);
+
     });
 
       $.fn.parallax = function(options) {
@@ -10,7 +13,7 @@ $( document ).ready(function() {
 
           // Establish default settings
           var settings = $.extend({
-              speed        : 0.5
+              speed        : .5
           }, options);
 
           // Iterate over each object in collection
@@ -38,11 +41,10 @@ $( document ).ready(function() {
 
           });
           });
-      }
+      };
 
-      // THIS PART WOULD GO AT THE BOTTOM OF THE HTML PAGE (INSIDE <script> TAGS)
       $('.parallax').parallax({
-  		speed : 1
-    });
+        speed : 0.5
+      });
 
   });

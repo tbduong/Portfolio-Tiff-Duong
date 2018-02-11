@@ -3,36 +3,119 @@
   <head>
     <meta charset="utf-8">
     <title>Tiffani Duong | Front End Developer </title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/stylesheet.css">
   </head>
   <body>
+    <nav class="nav1">
+      <div class="container">
+        <a class="navbar-brand" href="#">T<strong>D</strong></a>
+      </div>
+    </nav>
+    <nav class="nav2">
+      <div class="container">
+        <a class="navbar-brand" href="#">T<strong>D</strong></a>
+      </div>
+    </nav>
     <div class="jumbotron">
       <div class="banner-text">
         <h1 class="display-3">Sleek. User-Driven. Responsive. Design.</h1>
-        <p class="lead">Hi, my name is Tiffani and I am a Front End Developer based in the San Francisco Bay Area with a passion to create and design User Driven applications to tell your story.</p>
+        <p>Hi, my name is Tiffani and I am a Front End Developer based in the San Francisco Bay Area with a passion to create and design User Driven applications to tell your story.</p>
       </div>
       <div class="banner-span">
         <a class="btn btn-red" href="#" >More About Me</a>
       </div>
     </div>
-    <section class="parralax" style="background-image: url(./images/sf-splash.jpg);">
-
+    <section class="parallax" style="background-image: url(./images/sf-splash.jpg);">
     </section>
-    <section class="basic">
+    <section class="basic" id="about">
       <div class="clearfix">
-        <div class="container">
-          <h2>About Tiffani</h2>
+        <div class="container max-800">
+          <h1>About Tiffani</h1>
           <div class="col-md-12">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>I have always sought out opportunities and challenges that are meaningful to me. My professional and educational career has taken me down many different paths, but I have never stopped engaging my passion to help others, to learn more, and to solve problems. The skills and accomplishments I have earned in my prior experiences have allowed me to become a dynamic, process driven, and well rounded developer.</p>
+            <div class="about-icon text-center">
+              <img src="https://eliaslealblog.files.wordpress.com/2014/03/user-200.png" alt="">
+            </div>
+            <!-- <p>Aside from sitting in front of the computer all day, I enjoy discovering delicious bites, traveling to many different places, and learning about other cultures. A great day would consist of happy hour and a nice brew with my close family and friends.... I will probably be the small girl in the back of the bar yelling at the TV cheering on the Golden State Warriors.</p> -->
           </div>
         </div>
       </div>
     </section>
-
-
-
+    <section id="projects">
+      <div class="container max-800">
+        <h2> Recent Work and Projects </h2>
+        <div class="col-md-6">
+          <div class="content">
+            <a href="http://www.netgear.com" target="_blank">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="./images/sf-splash.jpg">
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">NETGEAR</h3>
+                <p class="content-text">Frontend Development, ADHOC Troubleshooting, and maintainence of company wide web pages.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="content">
+            <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="./images/sf-splash.jpg">
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">Arlo</h3>
+                <p class="content-text">Arlo documentation page. AJAX calls to API to fetch product documentation. </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="content">
+            <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="./images/sf-splash.jpg">
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">Wanderlust</h3>
+                <p class="content-text">An interactive photo blog and personal project, which allows users to share and explore different traveling experiences and activities through beautiful images, locations, and tags.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="content">
+            <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="./images/sf-splash.jpg">
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">AIDE</h3>
+                <p class="content-text">This is a short description</p>
+              </div>
+            </a>
+          </div>
+        </div>
+    </section>
+    <section id="contact" class="red">
+      <div class="container text-center max-800">
+        <h1>Interested in working together?</h1>
+        <h4>I am always looking for new projects and opportunities to collaborate on. Please take a few minutes to tell me about yours.</h4>
+        <span>
+          <a href="mailto:tiffaniduong@gmail.com" class="btn btn-white"> Contact Me</a>
+        </span>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="copyright">
+          <p> ©2017-2018 Tiffani Duong</p>
+        </div>
+        <div class="social">
+          <a href="#" class="fa fa-github"></a>
+          <a href="#" class="fa fa-linkedin-square"></a>
+          <a href="#" class="fa fa-vimeo-square"></a>
+        </div>
+      </div>
+    </footer>
   </body>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="js/main.js"></script>
