@@ -60,4 +60,22 @@ $( document ).ready(function() {
         speed : 0.5
       });
 
+  //right menu toggle
+      $count=1;
+		$('#hamburger').click(function(){
+			   if($count%2!=0) {
+			      $('#right-menu').animate({"marginRight":"200px"},500,function(){
+              $('#hamburger a').removeClass("fa-bars");
+              $('#hamburger a').addClass("fa-close");
+			});
+      $count++;
+			   } else {
+			        $('#right-menu').animate({"marginRight":"0"},500,function(){
+                $('#hamburger a').removeClass("fa-close");
+                $('#hamburger a').addClass("fa-bars");
+			});
+			$count++;
+			 }
+		});
+
   });
