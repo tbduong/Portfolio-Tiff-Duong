@@ -70,15 +70,8 @@ section h1, h2 {
 
 /*Navigation*/
 .nav1 {
-  background: linear-gradient(to top,transparent 0,rgba(0,0,0,.8) 64px,rgba(0,0,0,.8) 96px);
+  background: linear-gradient(to top,transparent 0,rgba(0,0,0,.8) 55px,rgba(0,0,0,.8) 96px);
   height: 70px;
-  position: fixed;
-  width: 100%;
-}
-
-.nav2 {
-  background: #000;
-  height: auto;
   position: fixed;
   width: 100%;
   z-index: 1;

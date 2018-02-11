@@ -1,8 +1,19 @@
 $( document ).ready(function() {
 
       $(window).scroll(function(){
-        $(".nav2").css("opacity", 0 + $(window).scrollTop() / 200);
-        $(".nav1").css("opacity", 1 - $(window).scrollTop() / 200);
+
+        var scroll = $(window).scrollTop();
+
+        if (scroll > 300) {
+	         $(".nav1").css("background" , "#000");
+           $(".nav1").css("linear-gradient" , "none");
+           $(".nav1").css("height" , "50px");
+	       } else {
+           $(".nav1").css("background" , "linear-gradient(to top,transparent 0,rgba(0,0,0,.8) 55px,rgba(0,0,0,.8) 96px)");
+           $(".nav1").css("height" , "70px");
+         }
+
+         //banner content fades out on scroll
         $(".banner-text , .banner-span").css("opacity", 1 - $(window).scrollTop() / 400);
 
     });
