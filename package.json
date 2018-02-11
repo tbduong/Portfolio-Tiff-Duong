@@ -1,0 +1,23 @@
+{
+  "name": "portfolio2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node": "^9.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbduong/Portfolio-Tiff-Duong.git"
+  },
+  "author": "Tiffani Duong <tiffaniduong@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tbduong/Portfolio-Tiff-Duong/issues"
+  },
+  "homepage": "https://github.com/tbduong/Portfolio-Tiff-Duong#readme"
+}
