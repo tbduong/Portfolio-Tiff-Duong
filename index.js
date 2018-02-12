@@ -1,48 +1,11 @@
-var http = require('http');
-var fs = require('fs');
-var path = require('path');
+// Use the environment variable or use a given port
+const PORT = process.env.PORT || 8080;
 
-http.createServer(function (request, response) {
+// Create a server, uses `handleRequest` which is function that takes
+// care of providing requested data
+const server = http.createServer(handleRequest);
 
-   console.log('request starting for ');
-   console.log(request);
-
-   var filePath = '.' + request.url;
-   if (filePath == './')
-       filePath = './index.html';
-
-   console.log(filePath);
-   var extname = path.extname(filePath);
-   var contentType = 'text/html';
-   switch (extname) {
-       case '.js':
-           contentType = 'text/javascript';
-           break;
-       case '.css':
-           contentType = 'text/css';
-           break;
-   }
-
-   path.exists(filePath, function(exists) {
-
-       if (exists) {
-           fs.readFile(filePath, function(error, content) {
-               if (error) {
-                   response.writeHead(500);
-                   response.end();
-               }
-               else {
-                   response.writeHead(200, { 'Content-Type': contentType });
-                   response.end(content, 'utf-8');
-               }
-           });
-       }
-       else {
-           response.writeHead(404);
-           response.end();
-       }
-   });
-
-}).listen(process.env.PORT || 5000);
-
-console.log('Server running at http://127.0.0.1:5000/');
+// Start the server
+server.listen(PORT, () => {
+  console.log('Server listening on: http://localhost:%s', PORT);
+});
