@@ -1,6 +1,6 @@
 body {
   background: #fafafa;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   letter-spacing: 0.5px;
 }
 
@@ -20,16 +20,33 @@ a:hover{
   padding-bottom: 10px;
 }
 
-/*Font Style*/
-body p {
-  font-size: 16px;
-  line-height: 25px;
+section {
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
-section h1, h2 {
+/*Font Style*/
+body p {
+  font-size: 17px;
+  line-height: 27px;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+section h4 {
+  font-family: "Montserrat";
+  margin-top: 0;
+}
+
+.skill-content h3 {
+  margin-top: 0;
 }
 
 /*Buttons*/
@@ -65,6 +82,14 @@ section h1, h2 {
 }
 
 /*Background Colors*/
+.darkgray {
+  background: #333;
+  color: #fff;
+}
+.green {
+  background: #c5ddc5;
+  color: #333;
+}
 .red {
   background: #ce5b42;
 }
@@ -102,7 +127,7 @@ nav .container {
 }
 
 #right-menu{
-  box-shadow: -8px 8px 15px -10px #000;
+  box-shadow: -8px -2px 15px -10px #000;
   float: right;
   width:200px;
   height:100%;
@@ -181,6 +206,7 @@ footer p {
   margin-bottom: 0;
   padding: 2em;
   text-shadow: 1px 1px 15px #000;
+  text-align: center;
 }
 
 }
@@ -283,7 +309,9 @@ footer p {
 .about-icon img{
   border-radius: 50%;
   transition: .9s ease-in-out;
-  padding-bottom: 20px;
+  width: 120px;
+  height: auto;
+  margin-bottom: 20px;
 }
 .about-icon img:hover{
   -webkit-transform: rotate(360deg);
@@ -306,6 +334,12 @@ footer p {
 .social .fa {
   font-size: 30px;
   padding-left: 10px;
+}
+
+.skill-icon {
+  width: 100%;
+  font-size: 45px;
+  text-align: center;
 }
 
 /*Fade Animation*/
@@ -352,6 +386,25 @@ footer p {
   color: #fff;
 }
 
+#skills {
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+
+#skills:before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  background: rgba(119,47,34,0.8);
+}
+
+#skills .container {
+  position: relative;
+  text-align: center;
+}
 
 /*Media Queries*/
 @media screen and (max-width: 768px) {
