@@ -1,11 +1,16 @@
-// Use the environment variable or use a given port
-const PORT = process.env.PORT || 8080;
+let express = require('express'),
+    path = require('path');
+var app = express();
+let server = require('http').Server(app);
 
-// Create a server, uses `handleRequest` which is function that takes
-// care of providing requested data
-const server = http.createServer(handleRequest);
+var port = process.env.PORT || 8000;
 
-// Start the server
-server.listen(PORT, () => {
-  console.log('Server listening on: http://localhost:%s', PORT);
+app.use(express.static(path.join(__dirname)));
+
+app.get('/', function(req, res, next){
+    res.sendStatus(200);
+});
+
+server.listen(port, function() {
+    console.log("App is running on port " + port);
 });
