@@ -1,7 +1,6 @@
 $( document ).ready(function() {
 
       $(window).scroll(function(){
-
         var scroll = $(window).scrollTop();
 
         if (scroll > 300) {
@@ -17,7 +16,14 @@ $( document ).ready(function() {
 
          //banner content fades out on scroll
         $(".banner-text , .banner-span").css("opacity", 1 - $(window).scrollTop() / 400);
+    });
 
+    //Navigation Scroll
+    $('a').click(function(){
+      $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+      }, 800);
+    return false;
     });
 
       $.fn.parallax = function(options) {
