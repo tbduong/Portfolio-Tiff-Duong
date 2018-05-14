@@ -19,11 +19,10 @@ $( document ).ready(function() {
     });
 
     //Navigation Scroll
-    $('a').click(function(){
-      $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-      }, 800);
-    return false;
+    $('a[href]').click( function(){
+      $('html, body').animate(
+        { scrollTop: $( $.attr(this, 'href') ).offset().top }, 800);
+      return false;
     });
 
       $.fn.parallax = function(options) {
@@ -67,7 +66,7 @@ $( document ).ready(function() {
       });
 
   //right menu toggle
-      $count=1;
+    $count=1;
 		$('#hamburger').click(function(){
 			   if($count%2!=0) {
 			      $('#right-menu').animate({"marginRight":"200px"},500,function(){
@@ -83,5 +82,11 @@ $( document ).ready(function() {
 			$count++;
 			 }
 		});
+
+    $('#alert').click(function(){
+      alert("click!");
+    });
+
+    //Style JavaScript Alert Messages
 
   });
