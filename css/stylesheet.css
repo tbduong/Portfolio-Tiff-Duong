@@ -115,6 +115,7 @@ nav .container {
   font-family: 'Pacifico', roboto;
   padding: 5px 0 0;
   font-size: 30px;
+  cursor: pointer;
 }
 .navbar-brand:hover {
   font-size: 30px !important;
@@ -125,6 +126,7 @@ nav .container {
   font-size: 20px;
   position: sticky;
   z-index: 1;
+  cursor: pointer;
 }
 
 #right-menu{
