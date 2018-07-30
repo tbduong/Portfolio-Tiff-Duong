@@ -70,12 +70,14 @@ $( document ).ready(function() {
 		$('#hamburger').click(function(){
 			   if($count%2!=0) {
 			      $('#right-menu').animate({"marginRight":"200px"},500,function(){
+              $(this).addClass('active');
               $('#hamburger a').removeClass("fa-bars");
               $('#hamburger a').addClass("fa-close");
 			});
       $count++;
 			   } else {
 			        $('#right-menu').animate({"marginRight":"0"},500,function(){
+                $(this).removeClass('active');
                 $('#hamburger a').removeClass("fa-close");
                 $('#hamburger a').addClass("fa-bars");
 			});
@@ -83,10 +85,12 @@ $( document ).ready(function() {
 			 }
 		});
 
-    $('#alert').click(function(){
-      alert("click!");
+    $('section, .jumbotron').on('click', function(){
+      $('#right-menu').animate({"marginRight":"0"},500,function(){
+        $(this).removeClass('active');
+        $('#hamburger a').removeClass("fa-close");
+        $('#hamburger a').addClass("fa-bars");
+      });
     });
-
-    //Style JavaScript Alert Messages
 
   });
