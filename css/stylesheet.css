@@ -224,7 +224,7 @@ nav .container {
   cursor: not-allowed;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .nav-desktop {
     display: none;
   }
