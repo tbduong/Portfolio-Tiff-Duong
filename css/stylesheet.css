@@ -12,10 +12,13 @@ a {
   transition: .3s;
   text-shadow: 1px 1px 15px #000;
 }
-
 a:hover{
   color: #ce5b42;
   text-shadow: none;
+}
+a:focus {
+  color: #ce5b42;
+  text-decoration: none;
 }
 
 .clearfix {
@@ -105,12 +108,22 @@ nav .container {
 .menu a {
   text-decoration: none;
 }
-.nav1 {
+.nav-desktop {
   background: linear-gradient(to top,transparent 0,rgba(0,0,0,.8) 55px,rgba(0,0,0,.8) 96px);
   height: 70px;
   position: fixed;
   width: 100%;
   z-index: 1;
+  transition: .2s ease;
+}
+.nav-mobile {
+  background: linear-gradient(to top,transparent 0,rgba(0,0,0,.8) 55px,rgba(0,0,0,.8) 96px);
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  transition: .2s ease;
+  display: none;
 }
 
 .navbar-brand {
@@ -121,6 +134,20 @@ nav .container {
 }
 .navbar-brand:hover {
   font-size: 30px !important;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0 30px;
+  font-size: 22px;
+}
+.nav-link a:hover {
+  color: #ce5b42;
+  text-decoration: none;
+}
+
+.nav-right{
+  float: right;
 }
 
 .menu {
@@ -197,6 +224,15 @@ nav .container {
   cursor: not-allowed;
 }
 
+@media (max-width: 767px) {
+  .nav-desktop {
+    display: none;
+  }
+  .nav-mobile {
+    display: block;
+  }
+}
+
 /*Footer*/
 footer {
   background: #333;
@@ -228,9 +264,15 @@ footer p {
   font-weight: 400 !important;
 }
 
+@media(min-width: 1300px) {
+  .jumbotron {
+    height: 800px;
+  }
+}
+
 .banner-text {
-  margin-top: 200px;
-  padding: 0 50px;
+  margin: 200px auto 0;
+  max-width: 750px;
 }
 
 .banner-span {

@@ -4,14 +4,16 @@ $( document ).ready(function() {
         var scroll = $(window).scrollTop();
 
         if (scroll > 300) {
-	         $(".nav1").css("background" , "#333");
-           $(".nav1").css("linear-gradient" , "none");
-           $(".nav1").css("height" , "50px");
+	         $(".nav-mobile, .nav-desktop").css("background" , "#333");
+           $(".nav-mobile, .nav-desktop").css("linear-gradient" , "none");
+           $(".nav-mobile, .nav-desktop").css("height" , "50px");
            $(".navbar-brand").css("font-size", "20px");
+           $(".nav-link").css("font-size", "18px");
 	       } else {
-           $(".nav1").css("background" , "linear-gradient(to top,transparent 0,rgba(0,0,0,.8) 55px,rgba(0,0,0,.8) 96px)");
-           $(".nav1").css("height" , "70px");
+           $(".nav-mobile, .nav-desktop").css("background" , "linear-gradient(to top,transparent 0,rgba(0,0,0,.8) 55px,rgba(0,0,0,.8) 96px)");
+           $(".nav-mobile, .nav-desktop").css("height" , "70px");
            $(".navbar-brand").css("font-size", "30px");
+           $(".nav-link").css("font-size", "22px");
          }
 
          //banner content fades out on scroll
