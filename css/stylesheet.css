@@ -13,11 +13,11 @@ a {
   text-shadow: 1px 1px 15px #000;
 }
 a:hover{
-  color: #ce5b42;
+  color: #379f9e;
   text-shadow: none;
 }
 a:focus {
-  color: #ce5b42;
+  color: #379f9e;
   text-decoration: none;
 }
 
@@ -70,11 +70,11 @@ section h4 {
 }
 
 .btn-red {
-  border: 2.5px solid #ce5b42;
+  border: 2.5px solid #379f9e;
   color: #fff;
 }
 .btn-red:hover {
-  background: #ce5b42;
+  background: #379f9e;
   color: #fff;
 }
 
@@ -84,7 +84,7 @@ section h4 {
 }
 .btn-white:hover {
   background:#fff;
-  color: #ce5b42;
+  color: #379f9e;
 }
 
 /*Background Colors*/
@@ -97,7 +97,7 @@ section h4 {
   color: #333;
 }
 .red {
-  background: #ce5b42;
+  background: #379f9e;
 }
 
 /*Navigation*/
@@ -142,7 +142,7 @@ nav .container {
   font-size: 22px;
 }
 .nav-link a:hover {
-  color: #ce5b42;
+  color: #379f9e;
   text-decoration: none;
 }
 
@@ -204,7 +204,7 @@ nav .container {
   color: #cacaca;
 }
 .sidenav-content a:hover{
-  color: #ce5b42;
+  color: #379f9e;
 }
 
 .sidenav-content .col-sm-6 {
@@ -383,7 +383,7 @@ footer p {
 }
 
 .social a:hover {
-  color: #ce5b42;
+  color: #379f9e;
 }
 
 .social .fa {
@@ -453,7 +453,7 @@ footer p {
   position: absolute;
   left: 0; right: 0;
   top: 0; bottom: 0;
-  background: rgba(119,47,34,0.8);
+  background: rgba(54, 115, 125,0.8);
 }
 
 #skills .container {
