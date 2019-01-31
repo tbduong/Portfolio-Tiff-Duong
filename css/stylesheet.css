@@ -401,7 +401,7 @@ footer p {
   font-size: 0.8em;
 }
 
-@media (max-width:600px) {
+@media (max-width:767px) {
   .content-image {
     display: none;
   }
