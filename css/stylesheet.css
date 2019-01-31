@@ -38,7 +38,9 @@ a:focus {
   color: transparent;
 }
 
-
+.col-mobile {
+  display: none;
+}
 .clearfix {
   padding-bottom: 10px;
 }
@@ -357,6 +359,11 @@ footer p {
   height: auto;
   width: 100%;
 }
+.content-image-mobile {
+  height: auto;
+  width: 100%;
+  display: none;
+}
 
 .content-details {
   position: absolute;
@@ -392,6 +399,18 @@ footer p {
 .content-details p{
   color: #fff;
   font-size: 0.8em;
+}
+
+@media (max-width:600px) {
+  .content-image {
+    display: none;
+  }
+  .content-image-mobile {
+    display: block;
+  }
+  .col-mobile {
+    display: block;
+  }
 }
 
 /*Icons*/
