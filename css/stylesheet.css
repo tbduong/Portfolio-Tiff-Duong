@@ -9,8 +9,9 @@ body {
 a {
   color: #fff;
   text-decoration: none;
-  transition: .3s;
+  transition: .2s;
   text-shadow: 1px 1px 15px #000;
+  transition: background-position .3s linear;
 }
 a:hover{
   color: #379f9e;
@@ -21,13 +22,34 @@ a:focus {
   text-decoration: none;
 }
 
+.project-title {
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, #333 50%, #379f9e 50%),
+                    linear-gradient(to right, #379f9e 50%, #333 50%);
+                    font-size: 40px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+
+}
+.project-title:hover {
+  background-position: -100% 0;
+  color: transparent;
+}
+
+
 .clearfix {
   padding-bottom: 10px;
 }
 
 section {
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.row {
+  padding-top: 100px;
 }
 
 /*Font Style*/
@@ -114,7 +136,7 @@ nav .container {
   position: fixed;
   width: 100%;
   z-index: 1;
-  transition: .2s ease;
+  transition: .4s ease;
 }
 .nav-mobile {
   background: linear-gradient(to top,transparent 0,rgba(0,0,0,.8) 55px,rgba(0,0,0,.8) 96px);
@@ -141,9 +163,21 @@ nav .container {
   padding: 0 30px;
   font-size: 22px;
 }
+
+
+.nav-link a {
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, #fafafa 50%, #379f9e 50%),
+                    linear-gradient(to right, #379f9e 50%, #fafafa 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+
+}
 .nav-link a:hover {
-  color: #379f9e;
-  text-decoration: none;
+  background-position: -100% 0;
+  color: transparent;
 }
 
 .nav-right{
@@ -294,8 +328,8 @@ footer p {
 /*Images*/
 .content {
   position: relative;
-  width: 90%;
-  max-width: 400px;
+  /* width: 90%; */
+  max-width: 600px;
   margin: 0 auto 40px;
   overflow: hidden;
 }
@@ -320,7 +354,7 @@ footer p {
 }
 
 .content-image{
-  height: 220px;
+  height: auto;
   width: 100%;
 }
 
@@ -459,6 +493,20 @@ footer p {
 #skills .container {
   position: relative;
   text-align: center;
+}
+
+.pill-group {
+  padding: 0;
+}
+.pill-group li {
+  background: #379f9e;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  list-style: none;
+  padding: 5px;
+  margin: 4px 2px 0 0;
+
 }
 
 /*Media Queries*/
