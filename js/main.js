@@ -26,6 +26,12 @@ $( document ).ready(function() {
         { scrollTop: $( $.attr(this, 'href') ).offset().top }, 800);
       return false;
     });
+    //Logo Scroll Up
+    $(".navbar-brand").on("click", function() {
+      $('html, body').animate(
+        { scrollTop: 0 }, 800);
+      return false;
+  });
 
       $.fn.parallax = function(options) {
 

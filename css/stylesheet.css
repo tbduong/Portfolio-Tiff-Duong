@@ -155,6 +155,7 @@ nav .container {
   padding: 5px 0 0;
   font-size: 30px;
   cursor: pointer;
+  transition: .3s ease;
 }
 .navbar-brand:hover {
   font-size: 30px !important;
@@ -252,12 +253,13 @@ nav .container {
   padding-bottom: 20px;
 }
 
-#right-menu .disabled {
-  color: #cecece;
+.disabled {
+  color: #cacaca !important;
 }
-#right-menu .disabled:hover {
-  color: #cecece;
+.disabled:hover {
+  color: #cacaca !important;
   cursor: not-allowed;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
