@@ -87,7 +87,7 @@ $( document ).ready(function() {
 			        $('#right-menu').animate({"marginRight":"0"},500,function(){
                 $(this).removeClass('active');
                 $('#hamburger a').removeClass("fa-close");
-                $('#hamburger a').addClass("fa-bars");
+                $('#hambuarger a').addClass("fa-bars");
 			});
 			$count++;
 			 }
